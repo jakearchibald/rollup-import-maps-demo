@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "rm -rf docs && rollup -c"
+  },
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "magic-string": "^0.25.6",
+    "prettier": "1.19.1",
+    "rollup": "^1.31.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
+  }
+}
