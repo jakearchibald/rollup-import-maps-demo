@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build": "rm -rf docs && rollup -c"
+    "build": "rm -rf docs && rollup -c",
+    "watch": "rm -rf docs && rollup -c --watch"
   },
   "devDependencies": {
     "husky": "^4.2.3",
